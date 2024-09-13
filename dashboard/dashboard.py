@@ -18,8 +18,8 @@ def create_daily_rentals_df(df):
     return daily_rentals_df
 
 # Load cleaned data
-hour_df = pd.read_csv("hour_df.csv")
-day_df = pd.read_csv("day_df.csv")
+hour_df = pd.read_csv("dashboard/hour_df.csv")
+day_df = pd.read_csv("dashboard/day_df.csv")
 
 day_2011_df = day_df[day_df["yr"] == 0]
 
