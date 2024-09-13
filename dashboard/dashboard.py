@@ -84,6 +84,7 @@ ax.set_yscale('log')
 ax.set_xlabel('Kondisi Cuaca')
 ax.set_ylabel('Jumlah Penyewaan Sepeda')
 ax.set_title('Jumlah Penyewaan Sepeda Berdasarkan Kondisi Cuaca')
+ax.set_xticks(weather_stats['weathersit'])
 ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
 for index, row in weather_stats.iterrows():
     ax.text(index, row['cnt'] * 1.05, int(row['cnt']), color='black', ha="center")
